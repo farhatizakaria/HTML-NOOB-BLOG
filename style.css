@@ -1,0 +1,17 @@
+/* Independent CSS file */
+body{
+background: black;
+color: white;
+font-family: 'Roboto Mono', monospace;
+}
+title{
+background: white;
+color: black;
+border-radius: 12px;
+}
+hr{
+    color: white;
+    background: white;
+    border: 2px solid white;
+    border-radius: 12px;
+}
