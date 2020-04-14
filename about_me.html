@@ -1,24 +1,154 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+*{
+	padding: 0;
+	margin: 0;
+}
+html, body{
+	background: white;
+	height: 1000px;
+	position: relative;
+z-index: 1;
+text-transform: uppercase;
+margin: 0;
+}
+a:link{
+text-decoration: none;
+color: #29ABE0;
+}
+a:visited{
+text-decoration: none;
+color: #29ABE0;
+}
+a:hover{
+text-decoration: none;
+color: #29ABE0;
+opacity: 1;
+}
+a:active{
+text-decoration: none;
+color: #29ABE0;
+}
+#hod{
+	background: White;
+	width: 100%;
+	height: 60px;
+	box-shadow: 0 2px 20px 2px #AAB8C2;
+  position: fixed;
+ z-index: 11;
+}
+#fem1{
+	margin: 25px 0 0 50px;
+	color: #29ABE0;
+	font-size: 16px;
+	font-weight: bolder;
+}
+#fem2{
+	margin: -24.5px 0 0 150px;
+	color: #434B57;
+	font-size: 15px;
+}
+#fem3{
+	margin: -24.5px 0 0 250px;
+	color: #434B57;
+	font-size: 15px;
+}
+#hr1{
+	color: #29ABE0;
+	border: 2px solid #29ABE0;
+	width: 47px;
+	border-radius: 8px;
+	margin: 6px 0 0 50px;
+}
+#hr2{
+	color: #434B57;
+	border: 2px solid #434B57;
+	width: 53px;
+	border-radius: 8px;
+	margin: 5px 0 0 150px;
+}
+#hr3{
+	color: #434B57;
+	border: 2px solid #434B57;
+	width: 70px;
+	border-radius: 8px;
+	margin: 4px 0 0 250px;
+}
+#coni1{
+	position: relative;
+	z-index: 2;
+	height: 350px;
+	width: 100%;
+margin: 0 0 -180px 0;
+padding: 23px 0 0 0;
+}
+#coni2{
+height: 120px;
+	width: 120px;
+	border-radius: 50%;
+		position: relative;
+	z-index: 3;
+	margin: -110px 0 0 120px;
+	border: 2px solid white;
+}
+#con h3{
+	color: white;
+	position: relative;
+	z-index: 4;
+	opacity: 0.8;
+	margin: 10px 0 0 140px;
+}
+#con h2{
+	color: white;
+	position: relative;
+	z-index: 4;
+	margin: 0 0 0 80px;
+}
+#con h4{
+	color: black;
+	position: relative;
+	z-index: 4;
+	background: white;
+	border-radius: 50px;
+opacity: 1;
+	margin: 10px 0 0 82px;
+	padding: 10px 10px 10px 20px;
+	width: 170px;
+	font-size: 16px;
+}
+#fdb{
+	position: fixed;
+	z-index: 5;
+	color: white;
+	float: left;
+	border-radius: 0 12px 12px 0;
+	background: #A3080C;
+	padding: 6px;
+}
+</style>
     <title>ABOUT ME | Zakaria Farhati</title>
-    <meta charset = "UTF-8"> <!-- UTF-8 FORMAT -->
-    <html lang = "en-US"> <!-- the language of the HTML page -->
-    <link rel = "stylesheet" type = "text/css" href = "style.css" /> <!-- The link to access to CSS file -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <hr width="50px" />
-    <hr width="70px" />
-    <hr width="90px" />
-    <hr width="110px" />
-    <h1 id="title" align="center"><span>About Me</span></h1>
-<p align="center" style="color: white;">Hey! I'm <strong><a style="color: white; text-decoration: none;" href="https://github.com/farhatizakaria">Zakaria.</a></strong></p>
-<p id="quote" align="center"><code style="background: white; color: black; border-radius: 8px; padding: 5px;">Coding</code> has changed my world!</p>
-    <p id="quote" align="center">"Declare variables, not wat"</p>
-    <hr width="110" />
-    <hr width="90px" />
-    <hr width="70px" />
-    <hr width="50px" />
+<div id="hod">
+<a href="#"><h5 id="fem1">About</h2></a>
+<hr id="hr1">
+<a href="#"><h5 id="fem2">quotes</h2></a>
+<hr id="hr2">
+<a href="#"><h5 id="fem3">projects</h2></a>
+<hr id="hr3">
+</div>
+<br><br>
+<div id="con">
+<img id="coni1" src="/storage/emulated/0/Download/wp4056399-dark-netflix-wallpapers.jpg"/>
+<img id="coni2" src="/storage/emulated/0/Download/wp4056398-dark-netflix-wallpapers.png"/>
+<h3>Support</h4>
+<h2>Zakaria Farhati</h2>
+<a href="#"><h4>ko-fi.com/fitzcom</h4></a>
+</div>
+<div id="fdb">
+<p>feedback</p>
+</div>
 </body>
 </html>
