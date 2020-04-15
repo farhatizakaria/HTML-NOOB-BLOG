@@ -2,4 +2,4 @@
 HTML-NOOB-BLOG
 
 
-THIS REPOSITORY FOR TRAINING IN HTML AND CSS DEVELOPPING
+> This repository for training about web dev
