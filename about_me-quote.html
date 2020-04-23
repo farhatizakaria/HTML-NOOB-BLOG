@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="file:///storage/88F0-17F2/Android/data/com.android.chrome/files/Download/jquery-2.2.4.min.js"></script>
+<style>
+audio{
+    visibility: hidden;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+html, body{
+	background: white;
+	height: 1800px;
+	position: relative;
+z-index: 1;
+text-transform: uppercase;
+}
+a:link{
+text-decoration: none;
+color: #29ABE0;
+opacity: 1;
+}
+a:visited{
+text-decoration: none;
+color: #29ABE0;
+opacity: 1;
+}
+a:hover{
+text-decoration: none;
+color: #29ABE0;
+opacity: 1;
+}
+a:active{
+text-decoration: none;
+color: #29ABE0;
+opacity: 1;
+}
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 0 0 0;
+  position: relative;
+  z-index: 20;
+}
+.lds-ellipsis, background{
+	background: #FFF1E2;
+width: 380px;
+height: 2200px;
+position: relative;
+position: absolute;
+margin: -220px -50px -50px -10px;
+z-index: 20;
+padding: 0;
+	}
+.lds-ellipsis div {
+	position: relative;
+  z-index: 20;
+  position: fixed;
+  top: 270px;
+margin: 0 0 0 145px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #F5D4B7;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+background: #A3080C;
+  animation: lds-ellipsis1 0.5s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  background: #A3080C;
+  animation: lds-ellipsis2 0.5s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  background: #A3080C;
+  animation: lds-ellipsis2 0.5s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  background: #A3080C;
+  animation: lds-ellipsis3 0.5s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+#hod{
+	background: White;
+	width: 100%;
+	height: 60px;
+	box-shadow: 0 2px 20px 2px #AAB8C2;
+position: fixed;
+z-index: 11;
+}
+#fem1{
+	margin: 30px 0 0 50px;
+	color: #434B57;
+	font-size: 15px;
+}
+#fem2{
+	margin: -25px 0 0 150px;
+	color: #29ABE0;
+	font-size: 16px;
+	font-weight: bolder;
+}
+#fem3{
+	margin: -19px 0 0 250px;
+	color: #434B57;
+	font-size: 15px;
+}
+#hr1{
+	color: #29ABE0;
+	border: 2px solid #29ABE0;
+	width: 55px;
+	border-radius: 8px 8px 0 0;
+	margin: 8.5px 0 0 151px;
+}
+#coni1{
+	position: relative;
+	z-index: 2;
+	height: 350px;
+	width: 100%;
+margin: 0 0 -180px 0;
+padding: 23px 0 0 0;
+}
+#coni2{
+height: 120px;
+	width: 120px;
+	border-radius: 50%;
+		position: relative;
+	z-index: 3;
+	margin: -110px 0 0 120px;
+	border: 2px solid white;
+}
+#con h3{
+	color: white;
+	position: relative;
+	z-index: 4;
+	opacity: 0.8;
+	margin: 10px 0 0 140px;
+}
+#con h2{
+	color: white;
+	position: relative;
+	z-index: 4;
+	margin: 0 0 0 80px;
+}
+#con h4{
+	color: black;
+	position: relative;
+	z-index: 4;
+	background: white;
+	border-radius: 50px;
+opacity: 1;
+	margin: 10px 0 0 82px;
+	padding: 10px 10px 10px 20px;
+	width: 170px;
+	font-size: 16px;
+}
+#fdb{
+	position: fixed;
+	z-index: 5;
+	color: white;
+	float: left;
+	border-radius: 0 8px 8px 0;
+	background: #A3080C;
+	padding: 6px;
+	margin: 150px 0 0 0;
+	color: white;
+}
+#abt h1{
+	margin: 0 20px 0 20px;
+	font-size: 35px;
+	font-weight: bolder;
+}
+#abt h6{
+	margin: 0 20px 0 20px;
+	color: #434B57;
+	font-size: 16px;
+	font-weight: bold;
+}
+#trndp{
+	padding: 8px;
+	border-radius: 50px;
+	opacty: 0.5;
+	background: #29abe0;
+	color: #434B57;
+	margin: 0 -10px 0 20px;
+	font-size: 12px;
+	font-weight: bold;
+}
+#abti1{
+	height: 40px;
+	width: 40px;
+	margin: 0 0 0 20px;
+	opacity: 1;
+-webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
+}
+#abti1:hover{
+	height: 40px;
+	width: 40px;
+	margin: 0 0 0 20px;
+	opacity: 0.6;
+}
+#abti2{
+	height: 45px;
+	width: 45px;
+	margin: 5px 0 0 5px;
+	-webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
+opacity: 1;
+}
+#abti2:hover{
+	height: 45px;
+	width: 45px;
+	margin: 0 0 0 5px;
+opacity: 0.6;
+}
+#abti3{
+	height: 45px;
+	width: 45px;
+	margin: 5px 0 0 5px;
+	-webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
+opacity: 1;
+}
+#abti3:hover{
+	height: 45px;
+	width: 45px;
+	margin: 0 0 0 5px;
+opacity: 0.6;
+}
+#abti4{
+	height: 45px;
+	width: 45px;
+	margin: 5px 0 0 5px;
+	-webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
+opacity: 1;
+}
+#abti4:hover{
+	height: 45px;
+	width: 45px;
+	margin: 0 0 0 5px;
+opacity: 0.6;
+}
+#abti5{
+	height: 45px;
+	width: 45px;
+	margin: 5px 0 0 5px;
+	-webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
+opacity: 1;
+}
+#abti5:hover{
+	height: 45px;
+	width: 45px;
+	margin: 5px 0 0 5px;
+opacity: 0.6;
+}
+#gls h1{
+	margin: 0 20px 0 20px;
+	font-size: 35px;
+	font-weight: bolder;
+}
+#glsh6 h5{
+	color: #434B57;
+	font-size: 15px;
+	font-weight: bolder;
+	margin: 10px 5px 5px 5px;
+}
+#glsh6 h6{
+	color: #434B57;
+	font-size: 15px;
+	font-weight: lighter;
+	margin: 0 5px 10px 5px;
+}
+#glsh6{
+	margin: 0 20px 0 20px;
+	color: #434B57;
+	font-size: 15px;
+	font-weight: lighter;
+	border-radius: 8px;
+	background: white;
+	padding: 5px;
+	box-shadow: 10px 10px 25px 0 #AAB8C2;
+}
+#glsh6 img{
+	height: 300px;
+	width: 324px;
+	margin: 0 0 -10px -5px;
+	padding: 0;
+	border-radius: 0 0 8px 8px;
+audio{
+	visibility: hidden;
+}
+</style>
+<title>ABOUT ME | Zakaria Farhati-quotes</title>
+</head>
+<body>
+<div id="hod">
+<a href="#"><h5 id="fem1">About</h2></a>
+<hr id="hr1">
+<a href="#"><h5 id="fem2">quotes</h2></a>
+<a href="#"><h5 id="fem3">projects</h2></a>
+</div>
+<br><br>
+<audio controls autoplay loop>
+   <source src="/storage/88F0-17F2/Music/Geralt of Rivia The Witcher OST.mp3" type="audio/mpeg">
+   <source src="audio.ogg" type="audio/ogg">
+   Audio element not supported by your browser. 
+</audio>
+<div id="clol">
+<div class="lds-ellipsis">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+</div>
+<script>
+$("#clol").slideUp(20000);
+</script>
+</body>
+</html>
