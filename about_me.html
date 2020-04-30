@@ -184,6 +184,21 @@ opacity: 1;
 	padding: 10px 10px 10px 20px;
 	width: 170px;
 	font-size: 16px;
+		-webkit-transition-duration: 0.5s;
+transition-duration: 0.5s;
+}
+#con h4:hover{
+	color: black;
+	position: relative;
+	z-index: 4;
+	background: white;
+	border-radius: 50px;
+opacity: 1;
+	margin: 10px 0 0 82px;
+	padding: 10px 10px 10px 20px;
+	width: 170px;
+	font-size: 16px;
+box-shadow: 10px 10px 50px 0 #AAB8C2;
 }
 #fdb{
 	position: fixed;
@@ -193,7 +208,7 @@ opacity: 1;
 	border-radius: 0 8px 8px 0;
 	background: #A3080C;
 	padding: 6px;
-	margin: 150px 0 0 0;
+	margin: 100px 0 0 0;
 	color: white;
 }
 #abt h1{
@@ -202,9 +217,19 @@ opacity: 1;
 	font-weight: bolder;
 }
 #abt h6{
-	margin: 0 20px 0 20px;
+	margin: 0 20px 0 30px;
 	color: #434B57;
 	font-size: 16px;
+	font-weight: bold;
+}
+#trndp1{
+	padding: 8px;
+	border-radius: 50px;
+	opacty: 0.5;
+	background: #29abe0;
+	color: #434B57;
+	margin: 0 -10px 0 30px;
+	font-size: 12px;
 	font-weight: bold;
 }
 #trndp{
@@ -220,7 +245,7 @@ opacity: 1;
 #abti1{
 	height: 40px;
 	width: 40px;
-	margin: 0 0 0 20px;
+	margin: 0 0 0 30px;
 	opacity: 1;
 -webkit-transition-duration: 0.4s;
 transition-duration: 0.4s;
@@ -228,7 +253,7 @@ transition-duration: 0.4s;
 #abti1:hover{
 	height: 40px;
 	width: 40px;
-	margin: 0 0 0 20px;
+	margin: 0 0 0 30px;
 	opacity: 0.6;
 }
 #abti2{
@@ -312,7 +337,19 @@ opacity: 0.6;
 	border-radius: 8px;
 	background: white;
 	padding: 5px;
+		-webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
 	box-shadow: 10px 10px 25px 0 #AAB8C2;
+}
+#glsh6:hover{
+	margin: 0 20px 0 20px;
+	color: #434B57;
+	font-size: 15px;
+	font-weight: lighter;
+	border-radius: 8px;
+	background: white;
+	padding: 5px;
+	box-shadow: 10px 10px 50px 0 #AAB8C2;
 }
 #glsh6 img{
 	height: 300px;
@@ -320,15 +357,23 @@ opacity: 0.6;
 	margin: 0 0 -10px -5px;
 	padding: 0;
 	border-radius: 0 0 8px 8px;
+	}
 audio{
 	visibility: hidden;
+}
+#screw{
+	margin: 35px 0 -18px 0;
+	color: white;
+	font-weight: bold;
+ background: #FF5E5B;
+ padding: 5px;
 }
 </style>
 <title>ABOUT ME | Zakaria Farhati</title>
 </head>
 <body>
 <div id="clol">
-<div class="lds-ellipsis">
+<div clas="lds-ellipsis">
 <div></div>
 <div></div>
 <div></div>
@@ -341,10 +386,11 @@ $("#clol").slideUp(20000);
 <div id="hod">
 <a href="#"><h5 id="fem1">About</h2></a>
 <hr id="hr1">
-<a href="https://github.com/farhatizakaria/HTML-NOOB-BLOG/blob/master/about_me-quote.html"><h5 id="fem2">quotes</h2></a>
+<a href="#"><h5 id="fem2">quotes</h2></a>
 <a href="#"><h5 id="fem3">projects</h2></a>
 </div>
 <br><br>
+<marquee id="screw">Wifi or data required! Check your internet connection and try again.</marquee>
 <div id="con">
 <img id="coni1" src="/storage/emulated/0/Download/wp4056399-dark-netflix-wallpapers.jpg"/>
 <img id="coni2" src="/storage/emulated/0/Download/wp4056398-dark-netflix-wallpapers.png"/>
@@ -352,7 +398,7 @@ $("#clol").slideUp(20000);
 <h3>Support</h4>
 <br>
 <h2>Zakaria Farhati</h2>
-<a href="#"><h4>ko-fi.com/fitzcom</h4></a>
+<a id="aaa" href="#"><h4>ko-fi.com/fitzcom</h4></a>
 </div>
 <div id="fdb">
 <a style="color: white;" href="#"><p>feedback</p></a>
@@ -371,7 +417,7 @@ $("#clol").slideUp(20000);
 <h6>My hobbies are reading, cycling, coding, drawing</h6>
 <br>
 <br>
-<code id="trndp">C#</code>
+<code id="trndp1">C#</code>
 <code id="trndp">Html/Html5</code>
 <code id="trndp">Java</code>
 <code id="trndp">Python</code>
@@ -405,5 +451,8 @@ $("#clol").slideUp(20000);
    <source src="/storage/88F0-17F2/Music/Geralt of Rivia The Witcher OST.ogg" type="audio/ogg">
    Audio element not supported by your browser. 
 </audio>
+<script>
+$("#screw").fadeOut(100000);
+</script>
 </body>
 </html>
